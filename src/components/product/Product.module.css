@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container p {
+  color: black;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.operationContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.deleteButton button {
+  color: white;
+  border: none;
+  background-color: red;
+  border-radius: 3vw;
+  padding: 0.5rem;
+}
+
+.editButton button {
+  color: white;
+  border: none;
+  background-color: hsl(113, 85%, 51%);
+  border-radius: 3vw;
+  padding: 0.5rem;
+}
+
+@media (min-width: 900px) {
+  .deleteButton button:hover,
+  .editButton:hover {
+    opacity: 0.6;
+    transition: opacity 200ms ease-in-out;
+  }
+}

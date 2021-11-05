@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+.container button {
+  border: none;
+  color: white;
+  background-color: hsl(113, 85%, 51%);
+  border-radius: 3vw;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+}
+
+@media (min-width: 900px) {
+  .container {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+
+  .container button:hover {
+    background-color: hsl(113, 85%, 35%);
+    transition: background-color 200ms ease-in-out;
+  }
+
+  .container button {
+    padding: 0.8rem;
+  }
+}

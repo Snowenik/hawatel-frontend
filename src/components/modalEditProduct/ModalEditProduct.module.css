@@ -1,0 +1,61 @@
+.modalContainer {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContent {
+  position: fixed;
+  background-color: #fefefe;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 80%;
+  border-radius: 0.5rem;
+  padding: 5vw;
+  text-align: center;
+}
+
+.modalContent label {
+  display: inline-block;
+  width: 20vw;
+}
+
+.modalContent > div {
+  margin-bottom: 3vh;
+}
+
+.modalContent > div:nth-child(1) {
+  margin-top: 3vh;
+}
+
+.closeButton {
+  position: absolute;
+  top: 1vw;
+  right: 3vw;
+}
+
+.closeButton button {
+  border: none;
+  color: white;
+  background-color: red;
+  border-radius: 3vw;
+  font-size: 1.1rem;
+}
+
+.modalContent input[type="submit"] {
+  width: 30vw;
+  color: white;
+  border: none;
+  background-color: hsl(115, 87%, 54%);
+  border-radius: 3vw;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
