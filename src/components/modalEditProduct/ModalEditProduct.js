@@ -12,7 +12,7 @@ export const ModalEditProduct = (props) => {
     setValue(editProduct.value);
     setAmount(editProduct.amount);
     setComment(editProduct.comment);
-  });
+  }, []);
 
   const [product, setProduct] = useState(editProduct.product);
   const [value, setValue] = useState(editProduct.value);
